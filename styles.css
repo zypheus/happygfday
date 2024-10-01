@@ -1,0 +1,172 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    color: #e63946;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #e63946;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Dots */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #e63946;
+}
+
+/* Love Notes Section */
+#love-notes {
+    padding: 50px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+#love-notes h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #e63946;
+}
+
+#typewriter {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5em;
+    color: #555;
+    min-height: 50px;
+}
+
+/* Contact Form */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #e63946;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #d62828;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-top: 50px;
+}
+
+footer p {
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    #gallery h2, #love-notes h2, #contact h2 {
+        font-size: 1.8em;
+    }
+
+    #typewriter {
+        font-size: 1.2em;
+    }
+}
